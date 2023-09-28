@@ -80,3 +80,5 @@ Result (0 ms.) no: 0.01 noise: 0.87     unknown: 0.11   yes: 0.02
 Result (0 ms.) no: 0.01 noise: 0.87     unknown: 0.06   yes: 0.06
 ...
 ```
+
+![results](/assets/results.gif)
