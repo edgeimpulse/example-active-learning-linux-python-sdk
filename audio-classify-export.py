@@ -25,7 +25,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 # Function to display help message for command-line usage
 def help():
-    print('python classify.py <path_to_model.eim> <audio_device_ID, optional>' )
+    print('python3 classify.py <path_to_model.eim> <labels_to_upload, separated by comas, no space> <low_confidence_threshold> <high_confidence_threshold> <audio_device_ID, optional>' )
 
 # Function to export audio data to Edge Impulse
 def export_audio(data, freq, label='unknown', save=True):
