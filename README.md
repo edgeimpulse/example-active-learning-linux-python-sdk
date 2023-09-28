@@ -4,6 +4,20 @@ This example comes from the [Edge Impulse Linux Python SDK](https://github.com/e
 
 To run the example:
 
+1. Install the depedencies:
+
+```
+pip3 install -r requirements.txt
+```
+
+2. Grab your the API key of the project you want to upload the infered results raw data:
+
+![EI API KEY](/assets/grab-api-key.png)
+
+3. Past the new key in the `EI_API_KEY` variable in the `audio-classify-export.py` file:
+
+4. Run the script:
+
 ```
 python3 audio-classify-export.py modelfile.eim yes,no 0.6 0.8
 ```
