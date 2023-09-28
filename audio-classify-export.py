@@ -10,7 +10,7 @@ from edge_impulse_linux_custom.audio import AudioImpulseRunner
 
 # Global variables
 runner = None
-EI_API_KEY = 'ei_07443272fb2416e8d575111bb6cbceeda7519e9bb9292b9d'
+EI_API_KEY = 'ei_xxx'
 
 
 # Signal handler function to handle interruptions gracefully
