@@ -108,7 +108,7 @@ def main(argv):
             # Let the library choose an audio interface suitable for this model,
             # or pass device ID parameter to manually select a specific audio interface
             selected_device_id = None
-            selected_device_id = 2
+            # selected_device_id = 2
 
             if len(args) >= 5:
                 selected_device_id = int(args[4])
