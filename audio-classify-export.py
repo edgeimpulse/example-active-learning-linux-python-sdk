@@ -110,9 +110,9 @@ def main(argv):
             selected_device_id = None
             selected_device_id = 2
 
-            # if len(args) >= 5:
-            #     selected_device_id = int(args[4])
-            #     print("Device ID " + str(selected_device_id) + " has been provided as an argument.")
+            if len(args) >= 5:
+                selected_device_id = int(args[4])
+                print("Device ID " + str(selected_device_id) + " has been provided as an argument.")
 
             # Main loop for classification
             for res, audio, features in runner.classifier(device_id=selected_device_id):
