@@ -14,9 +14,19 @@ pip3 install -r requirements.txt
 
 ![EI API KEY](/assets/grab-api-key.png)
 
-3. Past the new key in the `EI_API_KEY` variable in the `audio-classify-export.py` file:
+3. Past the new key in the `EI_API_KEY` variable in the `audio-classify-export.py` file. Alternatively, load it from your environment variable:
 
-4. Run the script:
+```
+export EI_API_KEY='ei_xxxx'
+```
+
+4. Download your modelfile.eim:
+
+```
+edge-impulse-linux-runner --download modelfile.eim
+```
+
+5. Run the script:
 
 ```
 python3 audio-classify-export.py modelfile.eim yes,no 0.6 0.8

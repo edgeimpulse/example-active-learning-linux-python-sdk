@@ -10,7 +10,7 @@ from edge_impulse_linux_custom.audio import AudioImpulseRunner
 
 # Global variables
 runner = None
-EI_API_KEY = 'ei_xxx'
+EI_API_KEY = os.environ.get('EI_API_KEY') # add your Edge Impulse API key here or add it to your environment variables
 
 
 # Signal handler function to handle interruptions gracefully
@@ -108,9 +108,11 @@ def main(argv):
             # Let the library choose an audio interface suitable for this model,
             # or pass device ID parameter to manually select a specific audio interface
             selected_device_id = None
-            if len(args) >= 5:
-                selected_device_id = int(args[4])
-                print("Device ID " + str(selected_device_id) + " has been provided as an argument.")
+            selected_device_id = 2
+
+            # if len(args) >= 5:
+            #     selected_device_id = int(args[4])
+            #     print("Device ID " + str(selected_device_id) + " has been provided as an argument.")
 
             # Main loop for classification
             for res, audio, features in runner.classifier(device_id=selected_device_id):
