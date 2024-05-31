@@ -1,6 +1,6 @@
-# Active learning - Linux Python SDK - Audio
+# Active learning - Linux Inferencing Python SDK - Audio
 
-This example comes from the [Edge Impulse Linux Python SDK](https://github.com/edgeimpulse/linux-sdk-python/) that has been slightly modify to upload the raw data back to Edge Impulse based on the inference results.
+This example comes from the [Edge Impulse Linux Inferencing Python SDK](https://github.com/edgeimpulse/linux-sdk-python/) that has been slightly modify to upload the raw data back to Edge Impulse based on the inference results.
 
 To run the example:
 
